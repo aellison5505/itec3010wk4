@@ -5,23 +5,40 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { HeaderComponent } from './header/header.component';
+import { HealthComponent } from './health/health.component';
+import { NutritionComponent } from './nutrition/nutrition.component';
+import { FitnessComponent } from './fitness/fitness.component';
+import { AboutComponent } from './about/about.component';
 
 const appRoutes: Routes = [
-  {
+    { path: 'welcome', component: WelcomeComponent },
+    { path: 'health', component: HealthComponent },
+    { path: 'nutrition', component: NutritionComponent },
+    { path: 'fitness', component: FitnessComponent },
+    { path: 'about', component: AboutComponent },
+    {
     path: '',
-    redirectTo: '/',
+    redirectTo: '/welcome',
     pathMatch: 'full'
   }, {
     path: '**',
-    redirectTo: '/',
-
+    redirectTo: '/welcome'
   }
 
 ];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    WelcomeComponent,
+    HealthComponent,
+    NutritionComponent,
+    FitnessComponent,
+    AboutComponent
+
   ],
   imports: [
     BrowserModule,

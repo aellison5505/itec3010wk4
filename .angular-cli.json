@@ -10,18 +10,19 @@
       "assets": [
         "assets",
         "favicon.ico",
-        "w3-theme-red20170504.css",
-        "w320170504.css"
+        "w3-theme-red_20170504.css",
+        "w3_20170504.css",
+        "images"
       ],
       "index": "index.html",
-      "main": "main.ts",
+      "main": "main-jit.ts",
       "polyfills": "polyfills.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-      
+
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

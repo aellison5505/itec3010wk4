@@ -1,0 +1,9 @@
+Code is Typescript
+Build with Angular.io framework
+Bundled with webpack
+
+Hosted at
+http://itec3010.mobilewebapp.net
+
+Full development environment
+https://github.com/aellison5505/itec3010wk4

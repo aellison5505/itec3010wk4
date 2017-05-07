@@ -11,30 +11,31 @@ import * as import3 from '@angular/router';
 import * as import4 from '@angular/platform-browser';
 import * as import5 from '@angular/forms';
 import * as import6 from '@angular/http';
-import * as import7 from './welcome/welcome.component.ngfactory';
-import * as import8 from './health/health.component.ngfactory';
-import * as import9 from './nutrition/nutrition.component.ngfactory';
-import * as import10 from './fitness/fitness.component.ngfactory';
-import * as import11 from './about/about.component.ngfactory';
-import * as import12 from './app.component.ngfactory';
-import * as import13 from '../../../src/app/welcome/welcome.component';
-import * as import14 from '../../../src/app/health/health.component';
-import * as import15 from '../../../src/app/nutrition/nutrition.component';
-import * as import16 from '../../../src/app/fitness/fitness.component';
-import * as import17 from '../../../src/app/about/about.component';
+import * as import7 from '../../../src/app/route-index.service';
+import * as import8 from './welcome/welcome.component.ngfactory';
+import * as import9 from './health/health.component.ngfactory';
+import * as import10 from './nutrition/nutrition.component.ngfactory';
+import * as import11 from './fitness/fitness.component.ngfactory';
+import * as import12 from './about/about.component.ngfactory';
+import * as import13 from './app.component.ngfactory';
+import * as import14 from '../../../src/app/welcome/welcome.component';
+import * as import15 from '../../../src/app/health/health.component';
+import * as import16 from '../../../src/app/nutrition/nutrition.component';
+import * as import17 from '../../../src/app/fitness/fitness.component';
+import * as import18 from '../../../src/app/about/about.component';
 class AppModuleInjector extends import0.ɵNgModuleInjector {
     /**
      * @param {?} parent
      */
     constructor(parent) {
         super(parent, [
-            import7.WelcomeComponentNgFactory,
-            import8.HealthComponentNgFactory,
-            import9.NutritionComponentNgFactory,
-            import10.FitnessComponentNgFactory,
-            import11.AboutComponentNgFactory,
-            import12.AppComponentNgFactory
-        ], [import12.AppComponentNgFactory]);
+            import8.WelcomeComponentNgFactory,
+            import9.HealthComponentNgFactory,
+            import10.NutritionComponentNgFactory,
+            import11.FitnessComponentNgFactory,
+            import12.AboutComponentNgFactory,
+            import13.AppComponentNgFactory
+        ], [import13.AppComponentNgFactory]);
     }
     /**
      * @return {?}
@@ -322,6 +323,15 @@ class AppModuleInjector extends import0.ɵNgModuleInjector {
     /**
      * @return {?}
      */
+    get _RouteIndexService_56() {
+        if ((this.__RouteIndexService_56 == null)) {
+            (this.__RouteIndexService_56 = new import7.RouteIndexService());
+        }
+        return this.__RouteIndexService_56;
+    }
+    /**
+     * @return {?}
+     */
     createInternal() {
         this._CommonModule_0 = new import2.CommonModule();
         this._ErrorHandler_1 = import4.ɵa();
@@ -351,23 +361,23 @@ class AppModuleInjector extends import0.ɵNgModuleInjector {
         this._ROUTES_21 = [[
                 {
                     path: 'welcome',
-                    component: import13.WelcomeComponent
+                    component: import14.WelcomeComponent
                 },
                 {
                     path: 'health',
-                    component: import14.HealthComponent
+                    component: import15.HealthComponent
                 },
                 {
                     path: 'nutrition',
-                    component: import15.NutritionComponent
+                    component: import16.NutritionComponent
                 },
                 {
                     path: 'fitness',
-                    component: import16.FitnessComponent
+                    component: import17.FitnessComponent
                 },
                 {
                     path: 'about',
-                    component: import17.AboutComponent
+                    component: import18.AboutComponent
                 },
                 {
                     path: '',
@@ -559,6 +569,9 @@ class AppModuleInjector extends import0.ɵNgModuleInjector {
         if ((token === import0.APP_BOOTSTRAP_LISTENER)) {
             return this._APP_BOOTSTRAP_LISTENER_55;
         }
+        if ((token === import7.RouteIndexService)) {
+            return this._RouteIndexService_56;
+        }
         return notFoundResult;
     }
     /**
@@ -683,5 +696,7 @@ function AppModuleInjector_tsickle_Closure_declarations() {
     AppModuleInjector.prototype.__ROUTER_INITIALIZER_54;
     /** @type {?} */
     AppModuleInjector.prototype.__APP_BOOTSTRAP_LISTENER_55;
+    /** @type {?} */
+    AppModuleInjector.prototype.__RouteIndexService_56;
 }
 export const /** @type {?} */ AppModuleNgFactory = new import0.NgModuleFactory(AppModuleInjector, import1.AppModule);

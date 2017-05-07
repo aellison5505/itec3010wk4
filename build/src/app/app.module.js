@@ -10,6 +10,8 @@ import { HealthComponent } from './health/health.component';
 import { NutritionComponent } from './nutrition/nutrition.component';
 import { FitnessComponent } from './fitness/fitness.component';
 import { AboutComponent } from './about/about.component';
+import { RouteIndexService } from './route-index.service';
+import 'hammerjs';
 const /** @type {?} */ appRoutes = [
     { path: 'welcome', component: WelcomeComponent },
     { path: 'health', component: HealthComponent },
@@ -44,7 +46,7 @@ AppModule.decorators = [
                     HttpModule,
                     RouterModule.forRoot(appRoutes, { useHash: false })
                 ],
-                providers: [],
+                providers: [RouteIndexService],
                 bootstrap: [AppComponent]
             },] },
 ];

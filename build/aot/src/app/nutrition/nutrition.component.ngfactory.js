@@ -6,6 +6,7 @@
 /* tslint:disable */
 import * as import0 from '@angular/core';
 import * as import1 from '../../../../src/app/nutrition/nutrition.component';
+import * as import2 from '../../../../src/app/route-index.service';
 const /** @type {?} */ styles_NutritionComponent = (([]));
 export const /** @type {?} */ RenderType_NutritionComponent = import0.ɵcrt({
     encapsulation: 2,
@@ -522,7 +523,7 @@ export function View_NutritionComponent_0(l) {
 function View_NutritionComponent_Host_0(l) {
     return import0.ɵvid(0, [
         (l()(), import0.ɵeld(0, ((null)), ((null)), 1, 'ng-component', (([])), ((null)), ((null)), ((null)), View_NutritionComponent_0, RenderType_NutritionComponent)),
-        import0.ɵdid(57344, ((null)), 0, import1.NutritionComponent, (([])), ((null)), ((null)))
+        import0.ɵdid(57344, ((null)), 0, import1.NutritionComponent, [import2.RouteIndexService], ((null)), ((null)))
     ], (ck, v) => {
         ck(v, 1, 0);
     }, ((null)));

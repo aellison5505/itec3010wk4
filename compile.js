@@ -7,7 +7,8 @@ const files = [
   'node_modules/@angular/**.js',
   'build/**/*.js',
   'build/*.js',
-  'vendor/rxjs/**.js'
+  'vendor/rxjs/**.js',
+  'node_modules/hammerjs/hammer.js'
 ];
 
 console.log(files);
@@ -28,7 +29,9 @@ var compiler = new closureCompiler({
   process_common_js_modules: true,
   dependency_mode: 'strict',
   externs: [ 'node_modules/zone.js/dist/zone_externs.js',
-              './externs.js'],
+              './externs.js',
+              './hammer.ext.js'
+            ],
   js_module_root: [
     'node_modules/@angular/core',
     'node_modules/@angular/common',

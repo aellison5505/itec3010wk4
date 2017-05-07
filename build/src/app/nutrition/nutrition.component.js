@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
+import { RouteIndexService } from '../route-index.service';
 export class NutritionComponent {
-    constructor() { }
+    /**
+     * @param {?} routes
+     */
+    constructor(routes) {
+        this.routes = routes;
+    }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.routes.setIndex(2);
     }
 }
 NutritionComponent.decorators = [
@@ -15,7 +22,9 @@ NutritionComponent.decorators = [
 /**
  * @nocollapse
  */
-NutritionComponent.ctorParameters = () => [];
+NutritionComponent.ctorParameters = () => [
+    { type: RouteIndexService, },
+];
 function NutritionComponent_tsickle_Closure_declarations() {
     /** @type {?} */
     NutritionComponent.decorators;
@@ -24,4 +33,6 @@ function NutritionComponent_tsickle_Closure_declarations() {
      * @type {?}
      */
     NutritionComponent.ctorParameters;
+    /** @type {?} */
+    NutritionComponent.prototype.routes;
 }

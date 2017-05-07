@@ -13,17 +13,18 @@ import * as import3 from '@angular/router';
 import * as import4 from '@angular/platform-browser';
 import * as import5 from '@angular/forms';
 import * as import6 from '@angular/http';
-import * as import7 from './welcome/welcome.component.ngfactory';
-import * as import8 from './health/health.component.ngfactory';
-import * as import9 from './nutrition/nutrition.component.ngfactory';
-import * as import10 from './fitness/fitness.component.ngfactory';
-import * as import11 from './about/about.component.ngfactory';
-import * as import12 from './app.component.ngfactory';
-import * as import13 from '../../../src/app/welcome/welcome.component';
-import * as import14 from '../../../src/app/health/health.component';
-import * as import15 from '../../../src/app/nutrition/nutrition.component';
-import * as import16 from '../../../src/app/fitness/fitness.component';
-import * as import17 from '../../../src/app/about/about.component';
+import * as import7 from '../../../src/app/route-index.service';
+import * as import8 from './welcome/welcome.component.ngfactory';
+import * as import9 from './health/health.component.ngfactory';
+import * as import10 from './nutrition/nutrition.component.ngfactory';
+import * as import11 from './fitness/fitness.component.ngfactory';
+import * as import12 from './about/about.component.ngfactory';
+import * as import13 from './app.component.ngfactory';
+import * as import14 from '../../../src/app/welcome/welcome.component';
+import * as import15 from '../../../src/app/health/health.component';
+import * as import16 from '../../../src/app/nutrition/nutrition.component';
+import * as import17 from '../../../src/app/fitness/fitness.component';
+import * as import18 from '../../../src/app/about/about.component';
 class AppModuleInjector extends import0.ɵNgModuleInjector<import1.AppModule> {
   _CommonModule_0:import2.CommonModule;
   _ErrorHandler_1:any;
@@ -81,16 +82,17 @@ class AppModuleInjector extends import0.ɵNgModuleInjector<import1.AppModule> {
   __PreloadAllModules_53:import3.PreloadAllModules;
   __ROUTER_INITIALIZER_54:any;
   __APP_BOOTSTRAP_LISTENER_55:any[];
+  __RouteIndexService_56:import7.RouteIndexService;
   constructor(parent:import0.Injector) {
     super(parent,[
-      import7.WelcomeComponentNgFactory,
-      import8.HealthComponentNgFactory,
-      import9.NutritionComponentNgFactory,
-      import10.FitnessComponentNgFactory,
-      import11.AboutComponentNgFactory,
-      import12.AppComponentNgFactory
+      import8.WelcomeComponentNgFactory,
+      import9.HealthComponentNgFactory,
+      import10.NutritionComponentNgFactory,
+      import11.FitnessComponentNgFactory,
+      import12.AboutComponentNgFactory,
+      import13.AppComponentNgFactory
     ]
-    ,[import12.AppComponentNgFactory]);
+    ,[import13.AppComponentNgFactory]);
   }
   get _LOCALE_ID_25():any {
     if ((this.__LOCALE_ID_25 == null)) { (this.__LOCALE_ID_25 = import0.ɵn(this.parent.get(import0.LOCALE_ID,(null as any)))); }
@@ -221,6 +223,10 @@ class AppModuleInjector extends import0.ɵNgModuleInjector<import1.AppModule> {
     if ((this.__APP_BOOTSTRAP_LISTENER_55 == null)) { (this.__APP_BOOTSTRAP_LISTENER_55 = [this._ROUTER_INITIALIZER_54]); }
     return this.__APP_BOOTSTRAP_LISTENER_55;
   }
+  get _RouteIndexService_56():import7.RouteIndexService {
+    if ((this.__RouteIndexService_56 == null)) { (this.__RouteIndexService_56 = new import7.RouteIndexService()); }
+    return this.__RouteIndexService_56;
+  }
   createInternal():import1.AppModule {
     this._CommonModule_0 = new import2.CommonModule();
     this._ErrorHandler_1 = import4.ɵa();
@@ -251,27 +257,27 @@ class AppModuleInjector extends import0.ɵNgModuleInjector<import1.AppModule> {
       this._ROUTES_21 = [[
         {
           path: 'welcome',
-          component: import13.WelcomeComponent
+          component: import14.WelcomeComponent
         }
         ,
         {
           path: 'health',
-          component: import14.HealthComponent
+          component: import15.HealthComponent
         }
         ,
         {
           path: 'nutrition',
-          component: import15.NutritionComponent
+          component: import16.NutritionComponent
         }
         ,
         {
           path: 'fitness',
-          component: import16.FitnessComponent
+          component: import17.FitnessComponent
         }
         ,
         {
           path: 'about',
-          component: import17.AboutComponent
+          component: import18.AboutComponent
         }
         ,
         {
@@ -349,6 +355,7 @@ class AppModuleInjector extends import0.ɵNgModuleInjector<import1.AppModule> {
     if ((token === import3.PreloadAllModules)) { return this._PreloadAllModules_53; }
     if ((token === import3.ROUTER_INITIALIZER)) { return this._ROUTER_INITIALIZER_54; }
     if ((token === import0.APP_BOOTSTRAP_LISTENER)) { return this._APP_BOOTSTRAP_LISTENER_55; }
+    if ((token === import7.RouteIndexService)) { return this._RouteIndexService_56; }
     return notFoundResult;
   }
   destroyInternal():void {
@@ -358,4 +365,4 @@ class AppModuleInjector extends import0.ɵNgModuleInjector<import1.AppModule> {
   }
 }
 export const AppModuleNgFactory:import0.NgModuleFactory<import1.AppModule> = new import0.NgModuleFactory<any>(AppModuleInjector,import1.AppModule);
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovZGV2L2l0ZWMzMDEwd2s0L3NyYy9hcHAvYXBwLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9EOi9kZXYvaXRlYzMwMTB3azQvc3JjL2FwcC9hcHAubW9kdWxlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIiAiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsifQ==
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovZGV2L2l0ZWMzMDEwd2s0L3NyYy9hcHAvYXBwLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9EOi9kZXYvaXRlYzMwMTB3azQvc3JjL2FwcC9hcHAubW9kdWxlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIiAiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=

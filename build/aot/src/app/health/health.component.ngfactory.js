@@ -6,6 +6,7 @@
 /* tslint:disable */
 import * as import0 from '@angular/core';
 import * as import1 from '../../../../src/app/health/health.component';
+import * as import2 from '../../../../src/app/route-index.service';
 const /** @type {?} */ styles_HealthComponent = (([]));
 export const /** @type {?} */ RenderType_HealthComponent = import0.ɵcrt({
     encapsulation: 2,
@@ -216,7 +217,7 @@ export function View_HealthComponent_0(l) {
 function View_HealthComponent_Host_0(l) {
     return import0.ɵvid(0, [
         (l()(), import0.ɵeld(0, ((null)), ((null)), 1, 'ng-component', (([])), ((null)), ((null)), ((null)), View_HealthComponent_0, RenderType_HealthComponent)),
-        import0.ɵdid(57344, ((null)), 0, import1.HealthComponent, (([])), ((null)), ((null)))
+        import0.ɵdid(57344, ((null)), 0, import1.HealthComponent, [import2.RouteIndexService], ((null)), ((null)))
     ], (ck, v) => {
         ck(v, 1, 0);
     }, ((null)));

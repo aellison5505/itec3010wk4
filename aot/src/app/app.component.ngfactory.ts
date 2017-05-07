@@ -7,10 +7,11 @@
 
 
 import * as import0 from '@angular/core';
-import * as import1 from './header/header.component.ngfactory';
-import * as import2 from '../../../src/app/header/header.component';
-import * as import3 from '@angular/router';
-import * as import4 from '../../../src/app/app.component';
+import * as import1 from '../../../src/app/app.component';
+import * as import2 from './header/header.component.ngfactory';
+import * as import3 from '../../../src/app/header/header.component';
+import * as import4 from '@angular/router';
+import * as import5 from '../../../src/app/route-index.service';
 const styles_AppComponent:any[] = ([] as any[]);
 export const RenderType_AppComponent:import0.RendererType2 = import0.ɵcrt({
   encapsulation: 2,
@@ -20,12 +21,42 @@ export const RenderType_AppComponent:import0.RendererType2 = import0.ɵcrt({
 );
 export function View_AppComponent_0(l:any):import0.ɵViewDefinition {
   return import0.ɵvid(0,[
-    (l()(),import0.ɵeld(0,(null as any),(null as any),1,'app-header',([] as any[]),(null as any),(null as any),(null as any),import1.View_HeaderComponent_0,import1.RenderType_HeaderComponent)),
-    import0.ɵdid(57344,(null as any),0,import2.HeaderComponent,([] as any[]),(null as any),(null as any)),
+      (l()(),import0.ɵeld(0,(null as any),(null as any),7,'div',[[
+        'class',
+        'w3-theme-g'
+      ]
+    ],(null as any),[
+      [
+        (null as any),
+        'swipeleft'
+      ]
+      ,
+      [
+        (null as any),
+        'swiperight'
+      ]
+
+    ]
+    ,(v,en,$event) => {
+      var ad:boolean = true;
+      var co:import1.AppComponent = v.component;
+      if (('swipeleft' === en)) {
+        const pd_0:any = ((<any>co.swipe($event.type)) !== false);
+        ad = (pd_0 && ad);
+      }
+      if (('swiperight' === en)) {
+        const pd_1:any = ((<any>co.swipe($event.type)) !== false);
+        ad = (pd_1 && ad);
+      }
+      return ad;
+    },(null as any),(null as any))),
+    (l()(),import0.ɵted((null as any),['\n'])),
+    (l()(),import0.ɵeld(0,(null as any),(null as any),1,'app-header',([] as any[]),(null as any),(null as any),(null as any),import2.View_HeaderComponent_0,import2.RenderType_HeaderComponent)),
+    import0.ɵdid(57344,(null as any),0,import3.HeaderComponent,([] as any[]),(null as any),(null as any)),
     (l()(),import0.ɵted((null as any),['\n'])),
     (l()(),import0.ɵeld(8388608,(null as any),(null as any),1,'router-outlet',([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
-    import0.ɵdid(73728,(null as any),0,import3.RouterOutlet,[
-      import3.RouterOutletMap,
+    import0.ɵdid(73728,(null as any),0,import4.RouterOutlet,[
+      import4.RouterOutletMap,
       import0.ViewContainerRef,
       import0.ComponentFactoryResolver,
       [
@@ -35,18 +66,23 @@ export function View_AppComponent_0(l:any):import0.ɵViewDefinition {
 
     ]
     ,(null as any),(null as any)),
+    (l()(),import0.ɵted((null as any),['\n'])),
     (l()(),import0.ɵted((null as any),['\n']))
   ]
   ,(ck,v) => {
-    ck(v,1,0);
+    ck(v,3,0);
   },(null as any));
 }
 function View_AppComponent_Host_0(l:any):import0.ɵViewDefinition {
   return import0.ɵvid(0,[
     (l()(),import0.ɵeld(0,(null as any),(null as any),1,'app-root',([] as any[]),(null as any),(null as any),(null as any),View_AppComponent_0,RenderType_AppComponent)),
-    import0.ɵdid(24576,(null as any),0,import4.AppComponent,([] as any[]),(null as any),(null as any))
+    import0.ɵdid(24576,(null as any),0,import1.AppComponent,[
+      import5.RouteIndexService,
+      import4.Router
+    ]
+    ,(null as any),(null as any))
   ]
   ,(null as any),(null as any));
 }
-export const AppComponentNgFactory:import0.ComponentFactory<import4.AppComponent> = import0.ɵccf('app-root',import4.AppComponent,View_AppComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovZGV2L2l0ZWMzMDEwd2s0L3NyYy9hcHAvYXBwLmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9EOi9kZXYvaXRlYzMwMTB3azQvc3JjL2FwcC9hcHAuY29tcG9uZW50LnRzIiwibmc6Ly8vRDovZGV2L2l0ZWMzMDEwd2s0L3NyYy9hcHAvYXBwLmNvbXBvbmVudC5odG1sIiwibmc6Ly8vRDovZGV2L2l0ZWMzMDEwd2s0L3NyYy9hcHAvYXBwLmNvbXBvbmVudC50cy5BcHBDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8YXBwLWhlYWRlcj48L2FwcC1oZWFkZXI+XG48cm91dGVyLW91dGxldD48L3JvdXRlci1vdXRsZXQ+XG4iLCI8YXBwLXJvb3Q+PC9hcHAtcm9vdD4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0lDQUE7Z0JBQUE7SUFBeUI7SUFDekI7Z0JBQUE7Ozs7TUFBQTtRQUFBO1FBQUE7TUFBQTs7SUFBQTtLQUFBO0lBQStCOzs7SUFEL0I7Ozs7O0lDQUE7Z0JBQUE7Ozs7In0=
+export const AppComponentNgFactory:import0.ComponentFactory<import1.AppComponent> = import0.ɵccf('app-root',import1.AppComponent,View_AppComponent_Host_0,{},{},([] as any[]));
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovZGV2L2l0ZWMzMDEwd2s0L3NyYy9hcHAvYXBwLmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9EOi9kZXYvaXRlYzMwMTB3azQvc3JjL2FwcC9hcHAuY29tcG9uZW50LnRzIiwibmc6Ly8vRDovZGV2L2l0ZWMzMDEwd2s0L3NyYy9hcHAvYXBwLmNvbXBvbmVudC5odG1sIiwibmc6Ly8vRDovZGV2L2l0ZWMzMDEwd2s0L3NyYy9hcHAvYXBwLmNvbXBvbmVudC50cy5BcHBDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8ZGl2IGNsYXNzPVwidzMtdGhlbWUtZ1wiICAoc3dpcGVsZWZ0KT1cInN3aXBlKCRldmVudC50eXBlKVwiIChzd2lwZXJpZ2h0KT1cInN3aXBlKCRldmVudC50eXBlKVwiID5cbjxhcHAtaGVhZGVyPjwvYXBwLWhlYWRlcj5cbjxyb3V0ZXItb3V0bGV0Pjwvcm91dGVyLW91dGxldD5cbjwvZGl2PlxuIiwiPGFwcC1yb290PjwvYXBwLXJvb3Q+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7TUNBQTtRQUFBO1FBQUE7TUFBQTtJQUFBO01BQUE7UUFBQTtRQUFBO01BQUE7O01BQUE7UUFBQTtRQUFBO01BQUE7O0lBQUE7S0FBQTtNQUFBO01BQUE7TUFBeUI7UUFBQTtRQUFBO01BQUE7TUFBaUM7UUFBQTtRQUFBO01BQUE7TUFBMUQ7SUFBQTtJQUE2RjtJQUM3RjtnQkFBQTtJQUF5QjtJQUN6QjtnQkFBQTs7OztNQUFBO1FBQUE7UUFBQTtNQUFBOztJQUFBO0tBQUE7SUFBK0I7SUFDekI7OztJQUZOOzs7OztJQ0RBO2dCQUFBOzs7SUFBQTtLQUFBOzs7OyJ9

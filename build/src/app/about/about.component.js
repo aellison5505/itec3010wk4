@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
+import { RouteIndexService } from '../route-index.service';
 export class AboutComponent {
-    constructor() { }
+    /**
+     * @param {?} routes
+     */
+    constructor(routes) {
+        this.routes = routes;
+    }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.routes.setIndex(4);
     }
 }
 AboutComponent.decorators = [
@@ -15,7 +22,9 @@ AboutComponent.decorators = [
 /**
  * @nocollapse
  */
-AboutComponent.ctorParameters = () => [];
+AboutComponent.ctorParameters = () => [
+    { type: RouteIndexService, },
+];
 function AboutComponent_tsickle_Closure_declarations() {
     /** @type {?} */
     AboutComponent.decorators;
@@ -24,4 +33,6 @@ function AboutComponent_tsickle_Closure_declarations() {
      * @type {?}
      */
     AboutComponent.ctorParameters;
+    /** @type {?} */
+    AboutComponent.prototype.routes;
 }

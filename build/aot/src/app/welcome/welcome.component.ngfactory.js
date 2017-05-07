@@ -6,6 +6,7 @@
 /* tslint:disable */
 import * as import0 from '@angular/core';
 import * as import1 from '../../../../src/app/welcome/welcome.component';
+import * as import2 from '../../../../src/app/route-index.service';
 const /** @type {?} */ styles_WelcomeComponent = (([]));
 export const /** @type {?} */ RenderType_WelcomeComponent = import0.ɵcrt({
     encapsulation: 2,
@@ -100,7 +101,7 @@ export function View_WelcomeComponent_0(l) {
 function View_WelcomeComponent_Host_0(l) {
     return import0.ɵvid(0, [
         (l()(), import0.ɵeld(0, ((null)), ((null)), 1, 'ng-component', (([])), ((null)), ((null)), ((null)), View_WelcomeComponent_0, RenderType_WelcomeComponent)),
-        import0.ɵdid(57344, ((null)), 0, import1.WelcomeComponent, (([])), ((null)), ((null)))
+        import0.ɵdid(57344, ((null)), 0, import1.WelcomeComponent, [import2.RouteIndexService], ((null)), ((null)))
     ], (ck, v) => {
         ck(v, 1, 0);
     }, ((null)));

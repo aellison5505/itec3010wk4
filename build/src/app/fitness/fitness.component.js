@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
+import { RouteIndexService } from '../route-index.service';
 export class FitnessComponent {
-    constructor() { }
+    /**
+     * @param {?} routes
+     */
+    constructor(routes) {
+        this.routes = routes;
+    }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.routes.setIndex(3);
     }
 }
 FitnessComponent.decorators = [
@@ -15,7 +22,9 @@ FitnessComponent.decorators = [
 /**
  * @nocollapse
  */
-FitnessComponent.ctorParameters = () => [];
+FitnessComponent.ctorParameters = () => [
+    { type: RouteIndexService, },
+];
 function FitnessComponent_tsickle_Closure_declarations() {
     /** @type {?} */
     FitnessComponent.decorators;
@@ -24,4 +33,6 @@ function FitnessComponent_tsickle_Closure_declarations() {
      * @type {?}
      */
     FitnessComponent.ctorParameters;
+    /** @type {?} */
+    FitnessComponent.prototype.routes;
 }

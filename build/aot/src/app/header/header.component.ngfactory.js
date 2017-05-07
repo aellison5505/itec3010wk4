@@ -57,12 +57,16 @@ export function View_HeaderComponent_0(l) {
         (l()(), import0.ɵted(((null)), ['\n  '])),
         (l()(), import0.ɵeld(0, ((null)), ((null)), 5, 'a', [
             [
+                'class',
+                'w3-bar-item w3-button'
+            ],
+            [
                 'routerLink',
                 '/welcome'
             ],
             [
                 'routerLinkActive',
-                'active'
+                'w3-green'
             ]
         ], [
             [
@@ -121,12 +125,16 @@ export function View_HeaderComponent_0(l) {
         (l()(), import0.ɵted(((null)), ['\n  '])),
         (l()(), import0.ɵeld(0, ((null)), ((null)), 5, 'a', [
             [
+                'class',
+                'w3-bar-item w3-button'
+            ],
+            [
                 'routerLink',
                 '/health'
             ],
             [
                 'routerLinkActive',
-                'active'
+                'w3-green'
             ]
         ], [
             [
@@ -185,12 +193,16 @@ export function View_HeaderComponent_0(l) {
         (l()(), import0.ɵted(((null)), ['\n  '])),
         (l()(), import0.ɵeld(0, ((null)), ((null)), 5, 'a', [
             [
+                'class',
+                'w3-bar-item w3-button'
+            ],
+            [
                 'routerLink',
                 '/nutrition'
             ],
             [
                 'routerLinkActive',
-                'active'
+                'w3-green'
             ]
         ], [
             [
@@ -249,12 +261,16 @@ export function View_HeaderComponent_0(l) {
         (l()(), import0.ɵted(((null)), ['\n  '])),
         (l()(), import0.ɵeld(0, ((null)), ((null)), 5, 'a', [
             [
+                'class',
+                'w3-bar-item w3-button'
+            ],
+            [
                 'routerLink',
                 '/fitness'
             ],
             [
                 'routerLinkActive',
-                'active'
+                'w3-green'
             ]
         ], [
             [
@@ -313,12 +329,16 @@ export function View_HeaderComponent_0(l) {
         (l()(), import0.ɵted(((null)), ['\n  '])),
         (l()(), import0.ɵeld(0, ((null)), ((null)), 5, 'a', [
             [
+                'class',
+                'w3-bar-item w3-button'
+            ],
+            [
                 'routerLink',
                 '/about'
             ],
             [
                 'routerLinkActive',
-                'active'
+                'w3-green'
             ]
         ], [
             [
@@ -424,23 +444,23 @@ export function View_HeaderComponent_0(l) {
     ], (ck, v) => {
         const /** @type {?} */ currVal_3 = '/welcome';
         ck(v, 6, 0, currVal_3);
-        const /** @type {?} */ currVal_4 = 'active';
+        const /** @type {?} */ currVal_4 = 'w3-green';
         ck(v, 7, 0, currVal_4);
         const /** @type {?} */ currVal_7 = '/health';
         ck(v, 13, 0, currVal_7);
-        const /** @type {?} */ currVal_8 = 'active';
+        const /** @type {?} */ currVal_8 = 'w3-green';
         ck(v, 14, 0, currVal_8);
         const /** @type {?} */ currVal_11 = '/nutrition';
         ck(v, 20, 0, currVal_11);
-        const /** @type {?} */ currVal_12 = 'active';
+        const /** @type {?} */ currVal_12 = 'w3-green';
         ck(v, 21, 0, currVal_12);
         const /** @type {?} */ currVal_15 = '/fitness';
         ck(v, 27, 0, currVal_15);
-        const /** @type {?} */ currVal_16 = 'active';
+        const /** @type {?} */ currVal_16 = 'w3-green';
         ck(v, 28, 0, currVal_16);
         const /** @type {?} */ currVal_19 = '/about';
         ck(v, 34, 0, currVal_19);
-        const /** @type {?} */ currVal_20 = 'active';
+        const /** @type {?} */ currVal_20 = 'w3-green';
         ck(v, 35, 0, currVal_20);
     }, (ck, v) => {
         var /** @type {?} */ co = v.component;

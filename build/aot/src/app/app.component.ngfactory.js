@@ -5,10 +5,11 @@
  */
 /* tslint:disable */
 import * as import0 from '@angular/core';
-import * as import1 from './header/header.component.ngfactory';
-import * as import2 from '../../../src/app/header/header.component';
-import * as import3 from '@angular/router';
-import * as import4 from '../../../src/app/app.component';
+import * as import1 from '../../../src/app/app.component';
+import * as import2 from './header/header.component.ngfactory';
+import * as import3 from '../../../src/app/header/header.component';
+import * as import4 from '@angular/router';
+import * as import5 from '../../../src/app/route-index.service';
 const /** @type {?} */ styles_AppComponent = (([]));
 export const /** @type {?} */ RenderType_AppComponent = import0.ɵcrt({
     encapsulation: 2,
@@ -21,12 +22,39 @@ export const /** @type {?} */ RenderType_AppComponent = import0.ɵcrt({
  */
 export function View_AppComponent_0(l) {
     return import0.ɵvid(0, [
-        (l()(), import0.ɵeld(0, ((null)), ((null)), 1, 'app-header', (([])), ((null)), ((null)), ((null)), import1.View_HeaderComponent_0, import1.RenderType_HeaderComponent)),
-        import0.ɵdid(57344, ((null)), 0, import2.HeaderComponent, (([])), ((null)), ((null))),
+        (l()(), import0.ɵeld(0, ((null)), ((null)), 7, 'div', [[
+                'class',
+                'w3-theme-g'
+            ]
+        ], ((null)), [
+            [
+                ((null)),
+                'swipeleft'
+            ],
+            [
+                ((null)),
+                'swiperight'
+            ]
+        ], (v, en, $event) => {
+            var /** @type {?} */ ad = true;
+            var /** @type {?} */ co = v.component;
+            if (('swipeleft' === en)) {
+                const /** @type {?} */ pd_0 = (((co.swipe($event.type))) !== false);
+                ad = (pd_0 && ad);
+            }
+            if (('swiperight' === en)) {
+                const /** @type {?} */ pd_1 = (((co.swipe($event.type))) !== false);
+                ad = (pd_1 && ad);
+            }
+            return ad;
+        }, ((null)), ((null)))),
+        (l()(), import0.ɵted(((null)), ['\n'])),
+        (l()(), import0.ɵeld(0, ((null)), ((null)), 1, 'app-header', (([])), ((null)), ((null)), ((null)), import2.View_HeaderComponent_0, import2.RenderType_HeaderComponent)),
+        import0.ɵdid(57344, ((null)), 0, import3.HeaderComponent, (([])), ((null)), ((null))),
         (l()(), import0.ɵted(((null)), ['\n'])),
         (l()(), import0.ɵeld(8388608, ((null)), ((null)), 1, 'router-outlet', (([])), ((null)), ((null)), ((null)), ((null)), ((null)))),
-        import0.ɵdid(73728, ((null)), 0, import3.RouterOutlet, [
-            import3.RouterOutletMap,
+        import0.ɵdid(73728, ((null)), 0, import4.RouterOutlet, [
+            import4.RouterOutletMap,
             import0.ViewContainerRef,
             import0.ComponentFactoryResolver,
             [
@@ -34,9 +62,10 @@ export function View_AppComponent_0(l) {
                 ((null))
             ]
         ], ((null)), ((null))),
+        (l()(), import0.ɵted(((null)), ['\n'])),
         (l()(), import0.ɵted(((null)), ['\n']))
     ], (ck, v) => {
-        ck(v, 1, 0);
+        ck(v, 3, 0);
     }, ((null)));
 }
 /**
@@ -46,7 +75,10 @@ export function View_AppComponent_0(l) {
 function View_AppComponent_Host_0(l) {
     return import0.ɵvid(0, [
         (l()(), import0.ɵeld(0, ((null)), ((null)), 1, 'app-root', (([])), ((null)), ((null)), ((null)), View_AppComponent_0, RenderType_AppComponent)),
-        import0.ɵdid(24576, ((null)), 0, import4.AppComponent, (([])), ((null)), ((null)))
+        import0.ɵdid(24576, ((null)), 0, import1.AppComponent, [
+            import5.RouteIndexService,
+            import4.Router
+        ], ((null)), ((null)))
     ], ((null)), ((null)));
 }
-export const /** @type {?} */ AppComponentNgFactory = import0.ɵccf('app-root', import4.AppComponent, View_AppComponent_Host_0, {}, {}, (([])));
+export const /** @type {?} */ AppComponentNgFactory = import0.ɵccf('app-root', import1.AppComponent, View_AppComponent_Host_0, {}, {}, (([])));
